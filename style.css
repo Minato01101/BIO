@@ -1,0 +1,201 @@
+body{
+    background-color: #222;
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.container{
+    margin: auto;
+    width: 100%;
+}
+
+h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 3em;
+}
+
+h2{
+    margin: 0;
+    font-size: 2.8em;
+}
+
+h3{
+    color: #ccc;
+}
+
+
+.menu .logo {
+    padding: 20px;
+    margin-left: 40px;
+    height: 4.5rem;
+    width: 4.5rem;
+    background-image: url(icon/itadori.jpg);
+    box-sizing: content-box;
+    background-size: cover;
+    border-radius: 20%;
+}
+
+.menu {
+    background-color: #333;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+}
+
+.menu nav{
+    font-size: 1.3em;
+    color: greenyellow;
+    padding: 40px;
+
+}
+
+.menu .container
+{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.portada {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/mejores-lenguajes-de-programacion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: auto;
+    width: 100%;
+    margin: 0;
+}
+
+.titulo {
+    display: grid;
+    height: 400px;
+    grid-template-rows: 1fr auto;
+    gap:calc(30%);
+    overflow-y: scroll;
+    padding: 0px 30px ;
+    scrollbar-width: none;
+}
+
+.p{
+    margin: auto;
+}
+
+.informacion
+{
+    padding: 10px 30px;
+    font-size: 16px;
+
+}
+
+.social-icons{
+    height: 50px;
+    width: 50px;
+    margin: 0;
+
+}
+
+footer{
+    background: linear-gradient(#444, transparent);
+}
+
+.redes{
+   
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contacto{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+
+}
+
+.listaLenguajes{
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+
+
+.listaLenguajes div {
+    width: 150px;
+}
+
+
+.menu a:hover{
+    color: greenyellow;
+    text-shadow: 3px 30px 40px #999;
+}
+
+.social-icons{
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    transition: height 0.5s, width 0.5s;
+}
+
+.social-icons:hover{
+    height: 70px;
+    width: 70px;
+    box-shadow: 3px 3px 50px 20px #777;
+}
+
+
+@media (max-width:620px){
+    .menu .logo {
+        padding: 20px;
+        margin-left: 40px;
+        height: 3.3rem;
+        width: 3.3rem;
+        background-image: url(icon/itadori.jpg);
+        box-sizing: content-box;
+        background-size: cover;
+        border-radius: 20%;
+    }
+
+    .menu nav{
+        font-size: 0.9em;
+        color: greenyellow;
+        padding: 40px;
+    
+    }
+}
+
+@media (max-width:500px){
+    .menu .logo {
+        padding: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+        height: 2.6rem;
+        width: 2.6rem;
+        background-image: url(icon/itadori.jpg);
+        box-sizing: content-box;
+        background-size: cover;
+        border-radius: 20%;
+    }
+
+    .menu nav{
+        font-size: 0.66em;
+        color: greenyellow;
+        padding: 40px;
+    
+    }
+}
